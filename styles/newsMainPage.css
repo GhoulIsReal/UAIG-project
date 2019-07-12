@@ -396,12 +396,14 @@ pre {
 .footer-services-column {
     display: flex;
     flex-flow: column;
-    width: 270px;
+    max-width: 270px;
+    min-width: auto;
     height: auto;
 }
 
 .footer-services {
-    width: 270px;
+    max-width: 270px;
+    min-width: auto;
     height: auto;
     margin-bottom: 15px;
 }
