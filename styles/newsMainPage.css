@@ -313,7 +313,7 @@ pre {
 .newsMainPage-footer-emblem-with-text {
     display: flex;
     height: auto;
-    width: 55%;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -330,6 +330,7 @@ pre {
     font-size: 18px;
     line-height: 24px;
     margin-left: 1.07%;
+    padding: 0;
 }
 
 .contacts {
