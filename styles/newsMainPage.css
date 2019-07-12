@@ -348,7 +348,7 @@ pre {
 .footer-part-except-emblem {
     display: flex;
     width: 70vw;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 47px;
 }
 
