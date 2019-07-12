@@ -10,12 +10,22 @@ body {
     height: 45px;
     width: 100vw;
     align-items: center;
+    justify-content: center;
     background: #262835;
 }
 
-#header * {
-    /* position: absolute; */
+.spacer {
+    padding-left: 10px;
+}
+
+.news-main-page-header-buttons-wrapper {
     display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.news-main-page-header-buttons-wrapper * {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -23,7 +33,15 @@ body {
     line-height: 20px;
     color: #BCBCBC;
     text-decoration: none;
+    display: flex;
     align-items: center;
+}
+
+.news-main-page-header-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
 }
 
 #header a:hover {
@@ -31,10 +49,17 @@ body {
 }
 
 .header-language-change-button {
-    padding-left: 13.8%;
-    padding-right: 15.6%;
     width: 110px;
     height: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BCBCBC;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .header-about-management-button {
@@ -92,8 +117,21 @@ body {
     width: 100vw;
     height: 120px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     background: #FFFFFF;
+}
+
+.newsMainPage-block-under-header-content-wrapper {
+    display: flex;
+    width: 75vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsMainPage-emblem-and-text-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 27vw;
 }
 
 .newsMainPage-block-under-header * {
@@ -104,19 +142,14 @@ body {
 }
 
 .kazakh-emblem {
-    width: 58.3px;
+    width: 3.8vw;
     height: 60px;
-    padding-top: 28px;
-    padding-bottom: 32px;
-    padding-left: 13.8%;
 }
 
 .newsMainPage-text-near-emblem {
-    width: 22vw;
     height: 41px;
     margin: 0;
-    padding-left: 1.07%;
-    padding-right: 9.3%;
+    padding-left: 20px;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
@@ -125,7 +158,7 @@ body {
 }
 
 .newsMainPage-under-header-buttons-wrapping-div {
-    width: 464px;
+    width: 504px;
     height: 14px;
     display: flex;
     align-items: center;
@@ -143,13 +176,19 @@ body {
     line-height: 20px;
 }
 
-.searchButton {
-    margin-right: 20px;
-}
-
 .all-news-preview-block {
     width: 100vw;
     background: #F7F7F7;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.text-wrapper {
+    width: 75vw;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
 }
 
 pre {
@@ -160,15 +199,13 @@ pre {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    padding-left: 13.8%;
-    height: 12px;
+    height: auto;
     display: flex;
     align-items: center;
     padding-top: 30px;
 }
 
 .news-text-itself {
-    padding-left: 13.8%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -183,8 +220,6 @@ pre {
     grid-gap: 25px;
     grid-template-columns: 370px 370px 370px;
     grid-template-rows: 360px 307px 307px 307px 307px;
-    margin-left: 13.8%;
-    
 }
 
 .main-news-grid-item {
@@ -307,7 +342,7 @@ pre {
 
 .footer-emblem-with-text-and-contacts {
     display: flex;
-    width: 70vw;
+    width: 75vw;
     height: auto;
     justify-content: space-between;
 }
@@ -347,7 +382,7 @@ pre {
 
 .footer-part-except-emblem {
     display: flex;
-    width: 70vw;
+    width: 75vw;
     justify-content: space-between;
     padding-top: 47px;
 }
@@ -357,7 +392,8 @@ pre {
 }
 
 .footer-electro-service {
-    width: 270px;
+    max-width: 270px;
+    min-width: auto;
     height: auto;
 }
 
