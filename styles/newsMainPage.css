@@ -142,7 +142,7 @@ body {
 }
 
 .kazakh-emblem {
-    width: 3.8vw;
+    width: 58px !important;
     height: 60px;
 }
 
@@ -217,9 +217,10 @@ pre {
 
 .all-news-preview-grid {
     display: grid;
+    width: 75vw;
     grid-gap: 25px;
-    grid-template-columns: 370px 370px 370px;
-    grid-template-rows: 360px 307px 307px 307px 307px;
+    grid-template-columns: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto);
+    grid-template-rows: minmax(200px, auto) minmax(130px, auto) minmax(130px, auto) minmax(130px, auto) minmax(130px, auto);
 }
 
 .main-news-grid-item {
@@ -272,7 +273,7 @@ pre {
     font-size: 16px;
     line-height: 24px;
     width: 100%;
-    height: 64px;
+    min-height: fit-content;
     margin: 20px 0 0 0;
 }   
 
