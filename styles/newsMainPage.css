@@ -219,8 +219,8 @@ pre {
     display: grid;
     width: 75vw;
     grid-gap: 25px;
-    grid-template-columns: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto);
-    grid-template-rows: minmax(200px, auto) minmax(130px, auto) minmax(130px, auto) minmax(130px, auto) minmax(130px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 23.9vw));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 23.9vw));
 }
 
 .main-news-grid-item {
