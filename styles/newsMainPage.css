@@ -299,6 +299,7 @@ pre {
 
 #footer {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     height: auto;
     background: #262835;
@@ -306,15 +307,14 @@ pre {
 
 .footer-emblem-with-text-and-contacts {
     display: flex;
-    width: 100vw;
+    width: 70vw;
     height: auto;
+    justify-content: space-between;
 }
 
 .newsMainPage-footer-emblem-with-text {
     display: flex;
     height: auto;
-    width: 50%;
-    justify-content: center;
     align-items: center;
 }
 
@@ -347,13 +347,13 @@ pre {
 
 .footer-part-except-emblem {
     display: flex;
-    width: 100vw;
+    width: 70vw;
     justify-content: center;
     padding-top: 47px;
 }
 
 .footer-part-except-emblem > div {
-    padding: 0 15px;
+    padding-right: 15px;
 }
 
 .footer-electro-service {
@@ -436,4 +436,8 @@ pre {
 
 .footer-services ul > li {
     margin-bottom: 15px;
+}
+
+.footer-last-column {
+    padding-left: 10px;
 }
