@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 #header {
@@ -142,7 +143,7 @@ body {
 }
 
 .kazakh-emblem {
-    width: 58px !important;
+    width: 58px;
     height: 60px;
 }
 
@@ -174,6 +175,46 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+}
+
+.navbar {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-menu-dropdwn-button {
+    background-color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-menu-dropdwn-button:hover {
+    background-color: cadetblue;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .all-news-preview-block {
@@ -217,6 +258,7 @@ pre {
 
 .all-news-preview-grid {
     display: grid;
+    justify-content: center;
     width: 75vw;
     grid-gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 23.9vw));
@@ -346,6 +388,7 @@ pre {
     width: 75vw;
     height: auto;
     justify-content: space-between;
+    padding-top: 5vh;
 }
 
 .newsMainPage-footer-emblem-with-text {
@@ -371,14 +414,16 @@ pre {
 
 .contacts {
     display: flex;
-    width: 7%;
-    height: 102px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    min-width: 150px;
+    height: auto;
 }
 
-.footer-svg-icons {
-    padding-left: 0.8vw;
-    padding-top: 56px;
-    cursor: pointer;
+.contacts * {
+    width: 20px;
+    height: 20px;
 }
 
 .footer-part-except-emblem {
