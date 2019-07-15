@@ -1,17 +1,13 @@
-function menuDrop() {
-    const element = document.getElementById("collapse");
-    element.classList.add("show");
+const menuDrop = () => {
+    document.getElementById("collapse").classList.toggle("show");
 }
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+window.onclick = function() {
+    if(!event.target.matches(".navbar-menu-dropdwn-button")){
+        const dropdowns = document.getElementById("collapse");
+        if(dropdowns.classList.contains("show")){
+            dropdowns.classList.remove("show");
         }
     }
 }
+
